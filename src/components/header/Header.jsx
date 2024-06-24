@@ -30,7 +30,7 @@ const Header = () => {
           <span className="ml-1 text-sm">Rezilla, 18 Grattan St, Brooklyn</span>
         </div>
 
-        <div className="flex items-center mr-12">
+        <div className="flex items-center mr-8">
           <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
