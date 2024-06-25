@@ -3,7 +3,7 @@ import Rezila from "../../images/rezila.png";
 
 function Navbar() {
   return (
-    <nav className="absolute w-full mt-[3%]">
+    <nav className="absolute w-full mt-[-13%]">
       <div className="flex justify-between items-center w-full p-4">
         <div className="flex items-center ml-8 space-x-4">
           <button className="text-base font-medium px-2">Home</button>
