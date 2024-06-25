@@ -5,7 +5,7 @@ const ContactForm = () => {
     <div className="flex justify-center items-center ml-[52%] mt-[-208px]">
       <div className="bg-white rounded-[30px] shadow-[10px_30px_50px_rgba(0,0,0,0.05)] h-auto max-w-[420px] w-[420px] p-[29px_20px]">
         <div className="flex flex-col ">
-          <h1 className="text-[16px] text-[#3a0ca3] font-medium text-center">
+          <h1 className="text-base text-[#3a0ca3] font-medium text-center">
             Contact Us Now
           </h1>
           <div className="flex justify-center mt-5">
@@ -38,7 +38,7 @@ const ContactForm = () => {
             ></textarea>
             <button
               type="submit"
-              className="bg-[#3a0ca3] text-white rounded-[50px] text-[16px] font-medium h-[60px] w-full hover:bg-[#6d28d9]"
+              className="bg-[#3a0ca3] text-white rounded-[50px] text-base font-medium h-[60px] w-full hover:bg-[#6d28d9]"
             >
               Submit
             </button>
