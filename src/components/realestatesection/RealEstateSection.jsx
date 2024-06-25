@@ -1,5 +1,6 @@
 import React from "react";
-import ContactForm from "../contactform/ContactForm";
+import ContactForm from "./contactform/ContactForm";
+import MySwiperComponent from "./myswipercomponent/MySwiperComponent";
 
 const RealEstateSection = () => {
   return (
@@ -17,6 +18,9 @@ const RealEstateSection = () => {
             Integer a dolor eu sapien sodales vulputate ac in purus.
           </p>
         </div>
+      </div>
+      <div>
+        <MySwiperComponent />
       </div>
       <div>
         <ContactForm />
