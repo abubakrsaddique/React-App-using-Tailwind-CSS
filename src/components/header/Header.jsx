@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="bg-[#3a0ca3] text-white p-2 absolute top-0 left-0 w-full">
+    <div className="bg-[#3a0ca3] text-white p-2 w-full hidden md:block">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <svg
@@ -11,7 +11,7 @@ const Header = () => {
             height="18"
             viewBox="0 0 14 18"
             fill="none"
-            className="ml-14"
+            className="ml-4 lg:ml-14"
           >
             <path
               d="M13 7.4C13 10.9346 7 17 7 17C7 17 1 10.9346 1 7.4C1 3.86538 3.68629 1 7 1C10.3137 1 13 3.86538 13 7.4Z"
@@ -30,7 +30,7 @@ const Header = () => {
           <span className="ml-1 text-sm">Rezilla, 18 Grattan St, Brooklyn</span>
         </div>
 
-        <div className="flex items-center mr-8">
+        <div className="flex items-center mr-4 lg:mr-8">
           <div className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const Header = () => {
             </svg>
             <span className="ml-2 text-sm">+1 206-214-229</span>
           </div>
-          <div className="flex items-center ml-8 mr-8">
+          <div className="flex items-center ml-8 mr-4 lg:mr-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
