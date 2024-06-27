@@ -1,3 +1,4 @@
+/* src/MySwiperComponent.css */
 .slider-container {
   position: absolute;
   width: 90%;
@@ -23,11 +24,13 @@
   cursor: pointer;
   z-index: 1000;
 }
+
 .swiper-button-prev:after,
 .swiper-button-next::after {
   font-size: 18px;
   color: gray;
 }
+
 .swiper-button-prev {
   left: 2px;
 }
@@ -49,15 +52,37 @@
   right: 5px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .slider-container {
+    width: 60%;
+    margin-left: 125px;
+  }
+
+  .slide-circle {
+    bottom: 85%;
+    right: 15px;
+  }
+
+  .swiper-button-prev {
+    left: 10px;
+  }
+
+  .swiper-button-next {
+    right: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .slider-container {
     width: 47%;
     margin-left: 49px;
   }
+
   .slide-circle {
     bottom: 87%;
     right: 25px;
   }
+
   .swiper-button-prev {
     left: 17px;
   }

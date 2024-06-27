@@ -2,9 +2,9 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="flex justify-center items-center ml-[52%] mt-[-208px]">
-      <div className="bg-white rounded-[30px] shadow-[10px_30px_50px_rgba(0,0,0,0.05)] h-auto max-w-[420px] w-[420px] p-[29px_20px]">
-        <div className="flex flex-col ">
+    <div className="flex justify-center items-center xl:mt-[-170px] lg:mt-[-232px] max-md:mt-64 sm:mt-80 lg:ml-[52%]">
+      <div className="bg-white rounded-[30px] shadow-[10px_30px_50px_rgba(0,0,0,0.05)] h-auto max-w-[420px] w-full sm:w-[420px] p-[29px_20px]">
+        <div className="flex flex-col">
           <h1 className="text-base text-[#3a0ca3] font-medium text-center">
             Contact Us Now
           </h1>
@@ -12,7 +12,7 @@ const ContactForm = () => {
             <div className="w-[344px] rounded-full border-[#3a0ca3] border-t-2"></div>
           </div>
           <div className="border-t border-gray-400 w-[110.5%] mt-[1px] ml-[-20px]"></div>
-          <div className="flex flex-col space-y-6 w-[90%] ml-5 mt-[40px]">
+          <div className="flex flex-col space-y-6 w-full px-5 sm:w-[90%] sm:ml-5 mt-[40px]">
             <input
               type="text"
               id="name"

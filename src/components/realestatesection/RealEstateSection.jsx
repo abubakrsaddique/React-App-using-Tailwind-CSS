@@ -22,9 +22,9 @@ const RealEstateSection = () => {
       <div>
         <MySwiperComponent />
       </div>
-      {/* <div>
+      <div>
         <ContactForm />
-      </div> */}
+      </div>
     </div>
   );
 };
