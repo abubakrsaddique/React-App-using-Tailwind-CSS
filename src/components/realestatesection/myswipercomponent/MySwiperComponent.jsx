@@ -1,3 +1,4 @@
+// src/MySwiperComponent.jsx
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
@@ -28,7 +29,7 @@ const MySwiperComponent = () => {
   };
 
   return (
-    <div className="absolute w-[90%] mx-auto left-0 right-0 mt-5">
+    <div className="slider-container">
       <Swiper
         ref={swiperRef}
         navigation={{
@@ -36,26 +37,20 @@ const MySwiperComponent = () => {
           nextEl: ".swiper-button-next",
         }}
         pagination={{ clickable: true }}
-        className="swiper w-full"
+        className="swiper"
         onSlideChange={handleSlideChange}
       >
         <SwiperSlide>
-          <img className="mt-[-25px] w-[50%]" src={slider} alt="" />
+          <img src={slider} alt="Slide 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="mt-[-25px] w-[50%]" src={slider} alt="" />
+          <img src={slider} alt="Slide 2" />
         </SwiperSlide>
       </Swiper>
-      <div
-        className="swiper-button-prev absolute top-1/2 transform -translate-y-1/2 w-7 h-7 bg-white rounded-full cursor-pointer z-10 left-4"
-        onClick={handlePrevButtonClick}
-      ></div>
-      <div
-        className="swiper-button-next absolute top-1/2 transform -translate-y-1/2 w-7 h-7 bg-white rounded-full cursor-pointer z-10 right-[52.5%]"
-        onClick={handleNextButtonClick}
-      ></div>
-      <div className=" absolute bottom-5 left-1/2 transform -translate-x-1/2"></div>
-      <div className=" absolute bottom-[90%] right-[52%]">
+      <div className="swiper-button-prev" onClick={handlePrevButtonClick}></div>
+      <div className="swiper-button-next" onClick={handleNextButtonClick}></div>
+      <div className="swiper-pagination"></div>
+      <div className="slide-circle">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="61"

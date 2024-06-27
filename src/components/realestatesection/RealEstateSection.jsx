@@ -5,7 +5,7 @@ import MySwiperComponent from "./myswipercomponent/MySwiperComponent";
 const RealEstateSection = () => {
   return (
     <div className="bg-gradient-to-b from-transparent to-blue-300 rounded-b-[800px]  h-[800px] w-full p-0 m-0">
-      <div className="mt-52 md:mt-32 lg:mt-40 xl:mt-52 px-6 md:px-12 lg:px-20 xl:px-32 w-full lg:w-3/5">
+      <div className="mt-52 md:mt-32 lg:mt-40 xl:mt-32 px-6 md:px-12 lg:px-20 xl:pl-20 xl:pr-36 w-full lg:w-3/5">
         <div className="flex flex-col items-start space-y-5">
           <h1 className="text-blue-600 text-xl md:text-2xl lg:text-3xl font-medium tracking-widest max-md:-mt-20">
             REAL ESTATE
