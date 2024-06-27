@@ -13,9 +13,9 @@ const App = () => {
       <Header />
       <Navbar />
       <RealEstateSection />
-      <CardComponent />
-      <MarqueeComponent />
-      <About />
+      {/* <CardComponent /> */}
+      {/* <MarqueeComponent /> */}
+      {/* <About /> */}
     </div>
   );
 };
