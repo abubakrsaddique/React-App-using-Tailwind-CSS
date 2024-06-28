@@ -11,7 +11,7 @@ const MarqueeComponent = () => {
   return (
     <div className="w-full">
       <div className="pb-20 w-full relative">
-        <div className="block absolute left-[10%] top-4">
+        <div className="hidden md:block absolute left-[10%] top-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="101"
@@ -42,7 +42,7 @@ const MarqueeComponent = () => {
             </defs>
           </svg>
         </div>
-        <p className="text-gray-500 text-center pt-20 font-medium mb-4 mr-4">
+        <p className="text-gray-500 text-center pt-20 max-md:pt-20 font-medium mb-4 mr-4 max-md:mr-0">
           Trusted by 100+ Companies across the globe
         </p>
         <div className="flex justify-center pt-12 overflow-hidden w-[87%] mx-auto">
