@@ -25,16 +25,16 @@ const About = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="flex flex-row items-center justify-center gap-4 mt-[-960px]">
+    <div className="max-w-7xl  mx-auto">
+      <div className="flex flex-row max-md:flex-col items-center justify-center gap-4 mt-[-960px]">
         {/* Left Side */}
-        <div className="flex flex-col items-start flex-3 mt-[75%]">
-          <div className="w-[85%] ml-[100px] mr-10">
+        <div className="flex flex-col items-start flex-3 mt-[270%] md:mt-[126%] lg:mt-[100%] xl:mt-[75%]">
+          <div className="w-[80%] ml-[46px] mr-10 md:w-[120%] md:ml-32 md:mr-28 lg:w-[105%] xl:w-[85%] lg:ml-[100px] lg:mr-10">
             <h2 className="text-blue-500 text-xl font-medium">WHO ARE WE</h2>
-            <h1 className="text-gray-800 text-[40px] leading-[47px] font-semibold my-6">
+            <h1 className="text-gray-800 text-[40px] leading-[47px] font-semibold my-6 md:text-4xl md:leading-normal lg:text-[40px] lg:leading-[47px]">
               Assisting individuals in locating the appropriate real estate.
             </h1>
-            <p className="text-gray-500 text-base font-normal leading-7">
+            <p className="text-gray-500 text-base font-normal leading-7 md:text-sm md:leading-6 lg:text-base lg:leading-7">
               Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec
               dignissim purus. Nulla convallis ipsum molestie nibh malesuada, ac
               malesuada leo volutpat.
@@ -42,7 +42,7 @@ const About = () => {
 
             {/* First Card */}
             <div
-              className="bg-white rounded-[30px] shadow-sm hover:shadow-lg transition-all duration-500 mb-[75px] max-w-[400px] w-[112%] mx-0"
+              className="bg-white rounded-[30px] shadow-sm hover:shadow-lg transition-all duration-500 mb-[75px] max-w-[400px] w-full mx-0 md:mb-8 lg:w-[112%] lg:mb-[75px]"
               data-aos="fade-right"
             >
               <div className="flex items-center py-4 px-6 mt-12">
@@ -71,10 +71,10 @@ const About = () => {
                   ></path>
                 </svg>
                 <div className="ml-4">
-                  <h3 className="text-xl font-medium text-blue-500">
+                  <h3 className="text-xl font-medium text-blue-500 md:text-lg lg:text-xl">
                     Donec porttitor euismod
                   </h3>
-                  <p className="text-base text-gray-500">
+                  <p className="text-base text-gray-500 md:text-sm lg:text-base">
                     Nullam a lacinia ipsum, nec dignissim purus. Nulla
                   </p>
                 </div>
@@ -83,7 +83,7 @@ const About = () => {
 
             {/* Second Card */}
             <div
-              className="bg-white rounded-[30px] shadow-sm hover:shadow-lg transition-all duration-500 mt-[-10%] max-w-[400px] w-[112%] mx-0"
+              className="bg-white rounded-[30px] shadow-sm hover:shadow-lg transition-all duration-500 mt-[-10%] max-w-[400px] w-full mx-0 md:mt-4 lg:w-[112%] lg:mt-[-10%]"
               data-aos="fade-right"
             >
               <div className="flex items-center py-4 px-6 -mb-6">
@@ -112,10 +112,10 @@ const About = () => {
                   ></path>
                 </svg>
                 <div className="ml-4">
-                  <h3 className="text-xl font-medium text-blue-500">
+                  <h3 className="text-xl font-medium text-blue-500 md:text-lg lg:text-xl">
                     Donec porttitor euismod
                   </h3>
-                  <p className="text-base text-gray-500">
+                  <p className="text-base text-gray-500 md:text-sm lg:text-base">
                     Nullam a lacinia ipsum, nec dignissim purus. Nulla
                   </p>
                 </div>
@@ -125,42 +125,42 @@ const About = () => {
         </div>
 
         {/* Right Side */}
-        <div className="columns-1 items-center  pb-14 mt-[219px] mr-[363px]">
-          <div className="relative z-[1] mt-[282%]">
+        <div className="xl:columns-1 lg:columns-1 columns-2 items-center xl:pb-14 pb-8 xl:mt-[219px] mt-32 mr-0 xl:mr-[363px] lg:mt-[219px]">
+          <div className="relative z-[1] xl:mt-[282%] md:mt-[20%] lg:mt-[282%]">
             <SpinningRoundImage
               src={RoundImage}
               alt="Round"
-              className=" ml-[60%] h-auto"
-              data-aos="fade-right "
+              className="xl:ml-[60%] md:ml-[40%] ml-[50%] lg:ml-[60%] xl:h-auto "
+              data-aos="fade-right"
               data-aos-duration="2000"
               data-aos-easing="ease-in-out"
             />
           </div>
-          <div className="flex mt-[-110px] ml-0 w-[215%] flex-row items-center">
-            <div className="mr-[-10px] mb-0">
+          <div className="flex flex-col md:flex-row items-center xl:mt-[-110px] md:mt-0 -mt-20 w-full md:w-[215%]">
+            <div className="mb-8 md:mr-[-10px]">
               <img
                 src={Image1}
                 alt="About1"
                 className="w-[317px] mx-auto"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
+                // data-aos="fade-right"
+                // data-aos-duration="1000"
+                // data-aos-easing="ease-in-out"
               />
             </div>
             <div>
               <div
-                className="mt-[-68px] mb-0"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
+                className="mt-[-68px] mb-0 max-md:w-full max-md:-ml-4 max-md:mt-16"
+                // data-aos="fade-down"
+                // data-aos-duration="1000"
+                // data-aos-easing="ease-in-out"
               >
                 <img src={Image2} alt="About2" className="w-auto" />
               </div>
               <div
-                className="mt-[-18px]"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
+                className="mt-[-18px] max-md:-ml-4 max-md:w-full"
+                // data-aos="fade-up"
+                // data-aos-duration="1000"
+                // data-aos-easing="ease-in-out"
               >
                 <img
                   src={Image3}

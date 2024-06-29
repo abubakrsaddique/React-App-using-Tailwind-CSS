@@ -15,7 +15,7 @@ const App = () => {
       <RealEstateSection />
       <CardComponent />
       <MarqueeComponent />
-      {/* <About /> */}
+      <About />
     </div>
   );
 };
